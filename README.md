@@ -1,3 +1,5 @@
+# NAME:Dinesh.M
+# REGNO:212222043002
 # EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-
 ## Aim: To Interface a Analog Input  (soil moisture sensor) to ARM IOT development board and write a  program to obtain  the data on the com port 
 ## Components required: STM32 CUBE IDE, ARM IOT development board,  STM programmer tool.
@@ -9,7 +11,10 @@ The Probe
 The sensor includes a fork-shaped probe with two exposed conductors that is inserted into the soil or wherever the moisture content is to be measured.
 
 As previously stated, it acts as a variable resistor, with resistance varying according to soil moisture.
-![image](https://github.com/vasanthkumarch/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/36288975/00e1751d-44e6-41e3-b261-717a657861be)
+
+![1](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/8dac5c37-21eb-4e0c-87da-c7884fd73120)
+
+
 The Module
 In addition, the sensor includes an electronic module that connects the probe to the Arduino.
 
@@ -17,7 +22,9 @@ The module generates an output voltage based on the resistance of the probe, whi
 
 The same signal is fed to an LM393 High Precision Comparator, which digitizes it and makes it available at a Digital Output (DO) pin.
 
-![image](https://github.com/vasanthkumarch/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/36288975/85f21aed-ce9b-416c-8ad2-d0919eb32dbf)
+![2](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/882a234a-df46-4fba-bb31-468e5c94b085)
+
+
 The module includes a potentiometer for adjusting the sensitivity of the digital output (DO).
 
 You can use it to set a threshold, so that when the soil moisture level exceeds the threshold, the module outputs LOW otherwise HIGH.
@@ -37,59 +44,88 @@ VCC supplies power to the sensor. It is recommended that the sensor be powered f
 
 GND is the ground pin.
 
-![image](https://github.com/vasanthkumarch/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/36288975/bf4f99ab-6c72-4d9b-9e65-40669401ce04)
+![3](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/137d6910-cb12-42dc-bf86-d2864c6945c3)
+
 
 ## Procedure:
  1. click on STM 32 CUBE IDE, the following screen will appear 
- ![image](https://user-images.githubusercontent.com/36288975/226189166-ac10578c-c059-40e7-8b80-9f84f64bf088.png)
+ 
+![4](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/40eb53fd-d643-4599-997e-3782e2f3620a)
 
- 2. click on FILE, click on new stm 32 project 
- ![image](https://user-images.githubusercontent.com/36288975/226189215-2d13ebfb-507f-44fc-b772-02232e97c0e3.png)
-![image](https://user-images.githubusercontent.com/36288975/226189230-bf2d90dd-9695-4aaf-b2a6-6d66454e81fc.png)
-3. select the target to be programmed  as shown below and click on next 
+ 2. click on FILE, click on new stm 32 project
+ 3. ![5](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/3faff339-649e-4746-b863-c99e4676af05)
 
-![image](https://user-images.githubusercontent.com/36288975/226189280-ed5dcf1d-dd8d-43ae-815d-491085f4863b.png)
+![6](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/34f00d07-3b6d-4f5e-9fcd-b64a99485a45)
+
+4. select the target to be programmed  as shown below and click on next 
+
+
+![7](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/a10c6ab8-f008-40c3-abc3-45f8a9ff590a)
 
 4.select the program name 
-![image](https://user-images.githubusercontent.com/36288975/226189316-09832a30-4d1a-4d4f-b8ad-2dc28f137711.png)
+
+![8](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/6ebdef74-4935-437e-97c5-19f7e3d0802d)
 
 
 5. corresponding ioc file will be generated automatically 
-![image](https://user-images.githubusercontent.com/36288975/226189378-3abbdee2-0df6-470f-a3cd-79c74e3d3ad8.png)
+
+![9](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/90429448-de66-4cb3-bd53-1138e8b98ea2)
+
 
 6.select the appropriate pins as gipo, in or out, USART or required options and configure 
-![image](https://user-images.githubusercontent.com/36288975/226189403-f7179f1a-3eae-4637-826b-ab4ec35ba1e1.png)
-![image](https://user-images.githubusercontent.com/36288975/226189425-2b2414ce-49b3-4b61-a260-c658cb2e4152.png)
+
+![10](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/dc3da6ef-ce0a-4994-a8a0-3ae6e98a48d6)
+
+![11](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/f7253e47-05a3-44fc-97a3-d03ffc4759a5)
+
 
 
 7.click on cntrl+S , automaticall C program will be generated 
-![image](https://user-images.githubusercontent.com/36288975/226189443-8b43451d-0b14-47e4-a20b-cc09c6ad8458.png)
-![image](https://user-images.githubusercontent.com/36288975/226189450-85ffa969-2ffb-4788-81e5-72d60fdda0f1.png)
+
+![12](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/3d9f038b-5a2a-4cb8-8bdf-dead236d48f0)
+
+![13](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/965633e5-92d9-4551-b45d-8fb1d4db8337)
+
+
 8. edit the program and as per required 
-![image](https://user-images.githubusercontent.com/36288975/226189461-a573e62f-a109-4631-a250-a20925758fe0.png)
+![14](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/c19e0e92-0ada-4886-b415-e2699470ad23)
+
+
 
 9. use project and build all 
-![image](https://user-images.githubusercontent.com/36288975/226189554-3f7101ac-3f41-48fc-abc7-480bd6218dec.png)
+
+![15](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/e5435d6f-65d1-4f50-9a7f-411e175ba078)
+
+  
 10. once the project is bulild 
-![image](https://user-images.githubusercontent.com/36288975/226189577-c61cc1eb-3990-4968-8aa6-aefffc766b70.png)
+
+ ![16](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/b815c0d4-887a-4509-9e91-dc09bba000a1)
+
 
 11. click on debug option 
-![image](https://user-images.githubusercontent.com/36288975/226189625-37daa9a3-62e9-42b5-a5ce-2ac63345905b.png)
+
+
+![17](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/3a136fb7-736a-4579-a5ed-b25e3bd20501)
+
 
 12. connect the  iot board to power supply and usb 
 
-13. After connecting open the STM cube programmer 
-![image](https://user-images.githubusercontent.com/36288975/227599356-9c465b7e-6bd0-436b-b4e8-742ed25e06ce.png)
+![18](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/6a31a959-b351-476d-8b0d-8c189296292b)
 
+
+13. After connecting open the STM cube programmer 
 14. click on UART and click on connect 
-![image](https://user-images.githubusercontent.com/36288975/227599458-26976d4a-f2d4-49f0-a49f-31f46eb15761.png)
+
+![19](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/cd4912b1-bcd5-4acc-a0aa-da3fe26d2aac)
+
 
 15. once it is connected , click on Erasing and programming option 
-![image](https://user-images.githubusercontent.com/36288975/227599531-f03d277e-440f-4f8a-8875-97f8e8058c71.png)
+![20](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/8be1c1ca-4ab2-428f-a39d-ac7b6ef7d725)
+
 
 16. flash the bin or hex file as shown below by switching the switch to flash mode 
 
-![image](https://user-images.githubusercontent.com/36288975/227599656-dc4a635f-b5f1-44c8-84c5-ee0a592fa184.png)
+![21](https://github.com/MDINESH220305/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/162429215/eef74b7a-e242-48c5-9e48-984ef8ac7244)
 
 
 17. check for execution of the output by switching the board to run mode 
@@ -166,9 +202,8 @@ void SystemClock_Config(void)
 
 
 ## Output screen shots on serial monitor   :
-![5 1](https://github.com/RISHIKEERTHI14605/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/147148903/3d29ab54-a983-450e-b7dc-bf67949cb4cf)
-![5 2](https://github.com/RISHIKEERTHI14605/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/147148903/edd39434-95f9-4acf-8438-2c0693725fe7)
-
+![1](https://github.com/Rajkiran0604/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/164345543/8020cc73-cca4-4e94-8d50-9aa1875e5067)
+![2](https://github.com/Rajkiran0604/EXPERIMENT--05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD-/assets/164345543/1e61c8f1-ded0-45e4-9c3c-24f513d3b174)
  
 ## Result :
 Interfacing a Analog Input (soil moisture sensor) with ARM microcontroller based IOT development is executed and the results visualized on serial monitor 
